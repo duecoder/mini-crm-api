@@ -1,4 +1,4 @@
-package br.com.gui.mini_crm;
+package br.com.gui.minicrm;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
