@@ -1,4 +1,4 @@
-package br.com.gui.minicrm.enterprise.infra.config;
+package br.com.gui.minicrm.v1.enterprise.infra.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

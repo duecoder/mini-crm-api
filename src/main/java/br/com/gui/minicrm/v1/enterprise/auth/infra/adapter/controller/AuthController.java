@@ -1,8 +1,9 @@
-package br.com.gui.minicrm.enterprise.auth.infra.adapter.controller;
+package br.com.gui.minicrm.v1.enterprise.auth.infra.adapter.controller;
 
-import br.com.gui.minicrm.enterprise.auth.infra.adapter.dto.AuthRequest;
-import br.com.gui.minicrm.enterprise.auth.infra.adapter.dto.AuthResponse;
-import br.com.gui.minicrm.enterprise.auth.service.JwtService;
+import br.com.gui.minicrm.v1.enterprise.auth.infra.adapter.dto.AuthRequest;
+import br.com.gui.minicrm.v1.enterprise.auth.infra.adapter.dto.AuthResponse;
+import br.com.gui.minicrm.v1.enterprise.auth.service.JwtService;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -30,8 +31,8 @@ public class AuthController {
         this.jwt = jwt;
     }
 
-    @PostMapping("/login")
-    public ResponseEntity<AuthResponse> login(@RequestBody AuthRequest req) {
+    @PostMapping(value = "/login", consumes = "application/json", produces = "application/json")
+    public ResponseEntity<AuthResponse> login(@RequestBody @Valid AuthRequest req) {
         Authentication auth = authManager.authenticate(
                 new UsernamePasswordAuthenticationToken(req.username(), req.password())
         );

@@ -1,3 +1,3 @@
-package br.com.gui.minicrm.enterprise.auth.infra.adapter.dto;
+package br.com.gui.minicrm.v1.enterprise.auth.infra.adapter.dto;
 
 public record AuthResponse(String accessToken, String refreshToken) {}

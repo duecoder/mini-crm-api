@@ -1,4 +1,4 @@
-package br.com.gui.minicrm.enterprise.infra.adapter.controller;
+package br.com.gui.minicrm.v1.enterprise.infra.adapter.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

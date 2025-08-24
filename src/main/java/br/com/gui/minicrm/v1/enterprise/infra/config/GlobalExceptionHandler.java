@@ -1,4 +1,4 @@
-package br.com.gui.minicrm.enterprise.infra.config;
+package br.com.gui.minicrm.v1.enterprise.infra.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;

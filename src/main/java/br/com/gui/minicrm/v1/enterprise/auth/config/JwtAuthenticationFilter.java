@@ -1,6 +1,6 @@
-package br.com.gui.minicrm.enterprise.auth.config;
+package br.com.gui.minicrm.v1.enterprise.auth.config;
 
-import br.com.gui.minicrm.enterprise.auth.service.JwtService;
+import br.com.gui.minicrm.v1.enterprise.auth.service.JwtService;
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

@@ -1,4 +1,4 @@
-package br.com.gui.minicrm.enterprise.auth.service;
+package br.com.gui.minicrm.v1.enterprise.auth.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
