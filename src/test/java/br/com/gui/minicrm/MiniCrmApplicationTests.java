@@ -1,4 +1,4 @@
-package br.com.gui.mini_crm;
+package br.com.gui.minicrm;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
